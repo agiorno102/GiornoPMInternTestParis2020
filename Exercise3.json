@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "60073874-7838-4f93-9726-7a34329308b7",
+		"name": "Streamroot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " API-Key eK2z8Vm5Eeu06ooKD8tfLQ.ySzxcvppme6F6x8lbOlMd0CyNPvO3Yicktj60jCijaY6MHoqmZs4VG73QAX5lvGp",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"rule_Giorno\",\n    \"type\":\"blacklist\",\n    \"countries\":[\"France\"],\n    \"isps\":[\"Orange France Mobile\"]\n}\n"
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"geo-isp-restrictions",
+						"lists"
+					]
+				},
+				"description": "Create a GEO/ISP Restriction List"
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/dna/properties",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " API-Key eK2z8Vm5Eeu06ooKD8tfLQ.ySzxcvppme6F6x8lbOlMd0CyNPvO3Yicktj60jCijaY6MHoqmZs4VG73QAX5lvGp",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"testGeoIspList\",\n    \"activationRatio\": 1,\n    \"superSeederRatio\": 1,\n    \"detectRangeRequests\": true,\n    \"networkActivation\": {\n        \"wifiEthernetUpload\": true,\n        \"wifiEthernetDownload\": true,\n        \"cellularOtherDownload\": true,\n        \"cellularOtherUpload\": true\n    },\n    \"ssai\": {\n        \"enabled\": false,\n        \"provider\": \"\",\n        \"options\": \"\"\n    },\n    \"geoblockingListId\": \"14714a72-4223-4120-800d-503d4b58ff99\"\n}\n"
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/dna/properties",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"dna",
+						"properties"
+					]
+				},
+				"description": "Attach a GEO/ISP Restriction List to a Mesh Property"
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/compass/properties",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " API-Key eK2z8Vm5Eeu06ooKD8tfLQ.ySzxcvppme6F6x8lbOlMd0CyNPvO3Yicktj60jCijaY6MHoqmZs4VG73QAX5lvGp",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"testGeoIspList\",\n    \"activationRatio\": 1,\n    \"superSeederRatio\": 1,\n    \"detectRangeRequests\": true,\n    \"networkActivation\": {\n        \"wifiEthernetUpload\": true,\n        \"wifiEthernetDownload\": true,\n        \"cellularOtherDownload\": true,\n        \"cellularOtherUpload\": true\n    },\n    \"ssai\": {\n        \"enabled\": false,\n        \"provider\": \"\",\n        \"options\": \"\"\n    },\n    \"geoblockingListId\": \"14714a72-4223-4120-800d-503d4b58ff99\"\n}\n"
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/compass/properties",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"compass",
+						"properties"
+					]
+				},
+				"description": "Attach a Geo/ISP Restriction List to an Orchestrator Property"
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists/{14714a72-4223-4120-800d-503d4b58ff99}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " API-Key eK2z8Vm5Eeu06ooKD8tfLQ.ySzxcvppme6F6x8lbOlMd0CyNPvO3Yicktj60jCijaY6MHoqmZs4VG73QAX5lvGp",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists/{14714a72-4223-4120-800d-503d4b58ff99}",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"geo-isp-restrictions",
+						"lists",
+						"{14714a72-4223-4120-800d-503d4b58ff99}"
+					]
+				},
+				"description": "Get a particular Geo/ISP Restriction List"
+			},
+			"response": []
+		},
+		{
+			"name": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": " API-Key eK2z8Vm5Eeu06ooKD8tfLQ.ySzxcvppme6F6x8lbOlMd0CyNPvO3Yicktj60jCijaY6MHoqmZs4VG73QAX5lvGp",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.streamroot.io/v3/customers/2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f/geo-isp-restrictions/lists",
+					"host": [
+						"api",
+						"streamroot",
+						"io"
+					],
+					"path": [
+						"v3",
+						"customers",
+						"2aadc4f9-41b6-493f-9cd8-8bf1ef3e735f",
+						"geo-isp-restrictions",
+						"lists"
+					]
+				},
+				"description": "Get all Geo/ISP Restriction Lists"
+			},
+			"response": []
+		}
+	]
+}
