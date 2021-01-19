@@ -1,0 +1,11 @@
+When I load the page(https://test.streamroot.io/candidates/test.html), there is no feedback on the DNA, 
+everything is being passed into the CDN.
+
+No sources are found in the Steamroot graphs no matter how many windows with the flowplayer and are playing
+
+This error is reproducing on Safari and Chrome on MacOSX
+
+I believe the error is rooted in the script tag in the HTML body as the source of the video is listed in there not 
+allowing for the DNA to be able to locate it and create P2P using. 
+
+
